@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F5F5DC;
+  color: #8B4513;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #8B4513;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  color: rgb(64, 41, 100);
+  font-size: 22px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #DAA520;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 2s ease;
+}
+
+.hero-title {
+  font-size: 45px;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #DAA520;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.4s;
+  animation: pulse 2s infinite;
+}
+
+.hero-btn:hover {
+  transform: scale(1.1);
+}
+
+/* SECTION */
+.section {
+  padding: 15px 15px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 35px;
+  background-color:#492a15e8 ;
+  line-height: 1.8;
+}
+
+/*  GRID CARDS  */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  height: 200px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  border-radius: 15px;
+}
+
+.card-text {
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4));
+}
+
+/* CITY OF THE DAY */
+.city-box {
+  height: 400px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+  transition: transform 0.3s;
+  
+}
+
+.city-box::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  border-radius: 15px;
+}
+
+.city-text {
+  position: relative;
+  z-index: 1;
+}
+
+.city-box:hover {
+  transform: scale(1.02);
+}
+
+/* FORM */
+.form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 2px solid #8B4513;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #DAA520;
+  outline: none;
+}
+
+.form button {
+  padding: 12px;
+  background: #8B4513;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.form button:hover {
+  background: #DAA520;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+  background: #8B4513;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-60px);}
+  to {opacity: 1; transform: translateY(0);}
+}

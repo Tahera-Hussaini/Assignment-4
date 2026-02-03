@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afghan Cultural Cities</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h1 class="logo">Afghan Cultural Cities</h1>
+
+    <nav class="menu">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#city">City of the Day</a>
+      <a href="#submit">Submit</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h2 class="hero-title">Explore Afghan Cities</h2>
+    <p class="hero-text">
+      Afghanistan is home to ancient civilizations, rich traditions, and
+      breathtaking landscapes. Each province has its own cultural identity
+      through architecture, food, poetry, and festivals.
+    </p>
+    <a href="#gallery" class="hero-btn">Start Exploring</a>
+  </section>
+
+  <!-- GALLERY (CARDS WITH BACKGROUND) -->
+  <section class="section" id="gallery">
+    <h2 class="section-title">City Gallery</h2>
+
+    <div class="grid">
+
+      <div class="card" style="background-image: url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=60');">
+        <div class="card-text">
+          <h3>Kabul</h3>
+          <p>The capital city with bazaars and mountains.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image: url(Mazar.jpg);">
+        <div class="card-text">
+          <h3>Mazar-i-Sharif</h3>
+          <p>Famous for the Blue Mosque and Nawroz celebrations.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image: url(Bamiyan.jpg);">
+        <div class="card-text">
+          <h3>Bamyan</h3>
+          <p>Known for beautiful valleys and Buddhist heritage.</p>
+        </div>
+      </div>
+
+      <div class="card" style="background-image: url(Herat.jpg);">
+        <div class="card-text">
+          <h3>Herat</h3>
+          <p>Known for poetry, art, and historic architecture.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--  CITY OF THE DAY  -->
+  <section class="section" id="city">
+    <h2 class="section-title">City of the Day</h2>
+
+    <div class="city-box" style="background-image: url('city of the day.jpg');">
+      <div class="city-text">
+        <h3>Mazar-i-Sharif</h3>
+        <p><strong>Landmark:</strong> The famous Blue Mosque</p>
+        <p><strong>Festival:</strong> Nawroz celebrations</p>
+        <p><strong>Culture:</strong> Afghan tradition and hospitality</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMIT FORM  -->
+  <section class="section" id="submit">
+    <h2 class="section-title">Submit Your Favorite City</h2>
+
+    <form class="form">
+      <label>Your Name</label>
+      <input type="text" placeholder="Enter your name">
+      <label>City Name</label>
+      <input type="text" placeholder="Enter city name">
+      <label>Cultural Detail</label>
+      <textarea rows="4" placeholder="Write something about this city..."></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Afghan Cultural Cities Project | HTML + CSS Homework 4</p>
+  </footer>
+
+</body>
+</html>
